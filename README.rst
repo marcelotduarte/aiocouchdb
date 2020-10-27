@@ -15,7 +15,7 @@ you'd found something that should be fixed.
 
 Features:
 
-- Modern CouchDB client for Python 3.3+ based on `aiohttp`_
+- Modern CouchDB client for Python 3.5.3+ based on `aiohttp`_
 - Complete CouchDB API support (JSON and Multipart) up to 1.6.1 version
 - Multiuser workflow with Basic Auth, Cookie, Proxy and OAuth support
 - Stateless behavior
@@ -35,13 +35,13 @@ Roadmap (not exactly in that order):
 Requirements
 ============
 
-- Python 3.3+
+- Python 3.5.3+
 - `aiohttp`_
 - `oauthlib`_ (optional)
 
-.. _aiohttp: https://github.com/KeepSafe/aiohttp
+.. _aiohttp: https://github.com/aio-libs/aiohttp
 .. _asyncio: https://docs.python.org/3/library/asyncio.html
-.. _oauthlib: https://github.com/idan/oauthlib
+.. _oauthlib: https://github.com/oauthlib/oauthlib
 
 .. _open issue: https://github.com/aio-libs/aiocouchdb/issues
 .. _send pull request: https://github.com/aio-libs/aiocouchdb/pulls

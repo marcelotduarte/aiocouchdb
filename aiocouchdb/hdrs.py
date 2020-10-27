@@ -10,11 +10,11 @@
 # flake8: noqa
 
 from aiohttp.hdrs import *
-from aiohttp.multidict import upstr
+from multidict import istr
 
 #: Defines CouchDB Proxy Auth username
-X_AUTH_COUCHDB_USERNAME = upstr('X-Auth-CouchDB-UserName')
+X_AUTH_COUCHDB_USERNAME = istr('X-Auth-CouchDB-UserName')
 #: Defines CouchDB Proxy Auth list of roles separated by a comma
-X_AUTH_COUCHDB_ROLES = upstr('X-Auth-CouchDB-Roles')
+X_AUTH_COUCHDB_ROLES = istr('X-Auth-CouchDB-Roles')
 #: Defines CouchDB Proxy Auth token
-X_AUTH_COUCHDB_TOKEN = upstr('X-Auth-CouchDB-Token')
+X_AUTH_COUCHDB_TOKEN = istr('X-Auth-CouchDB-Token')

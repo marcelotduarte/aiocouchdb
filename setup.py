@@ -17,8 +17,8 @@ setup_dir = os.path.dirname(__file__)
 mod = imp.load_module(
     'version', *imp.find_module('version', [join(setup_dir, 'aiocouchdb')]))
 
-if sys.version_info < (3, 3):
-    raise RuntimeError('aiocouchdb requires Python 3.3+')
+if sys.version_info < (3, 5, 3):
+    raise RuntimeError('aiocouchdb requires Python 3.5.3+')
 
 long_description = ''.join([
     open(join(setup_dir, 'README.rst')).read().strip(),
@@ -36,7 +36,7 @@ setup(
     name='aiocouchdb',
     version=mod.__version__,
     license='BSD',
-    url='https://github.com/kxepal/aiocouchdb',
+    url='https://github.com/aio-libs/aiocouchdb',
 
     description='CouchDB client built on top of aiohttp (asyncio)',
     long_description=long_description,
@@ -51,8 +51,9 @@ setup(
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
         'Topic :: Database :: Front-Ends',
         'Topic :: Software Development :: Libraries :: Python Modules'
     ],
@@ -62,7 +63,7 @@ setup(
     zip_safe=False,
 
     install_requires=[
-        'aiohttp==0.17.4'
+        'aiohttp>=3.3.0,<4'
     ],
     extras_require={
         'oauth': [
